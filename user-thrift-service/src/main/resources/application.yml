@@ -1,0 +1,12 @@
+service:
+  name: user-thrift-service
+  port: 7911
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password:
+    url: jdbc:mysql://127.0.0.1:3306/db_user?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
